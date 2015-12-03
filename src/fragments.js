@@ -641,6 +641,12 @@
         toArray: function(){
             return this.value;
         },
+        /**
+         * Gets the first GroupDoc, useful when group has the flag repeat=false
+         * */
+        getFirst: function() {
+            return this.value.length? this.value[0] : null;
+        },
 
         /**
          * Turns the fragment into a useable text version of it.

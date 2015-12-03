@@ -667,6 +667,8 @@
                             '<section data-field=\"linktodoc\"><a href=\"/testing_url/UrDofwEAALAdpbNH/with-jquery\">/testing_url/UrDofwEAALAdpbNH/with-jquery</a></section>' +
                             '<section data-field=\"linktodoc\"><a href=\"/testing_url/UrDp8AEAAPUdpbNL/with-bootstrap">/testing_url/UrDp8AEAAPUdpbNL/with-bootstrap</a></section>' +
                             '</section>');
+                    // Getting first groupDoc in group using getFirst.
+                    assert.equal(documents.results[0].getGroup('docchapter.docs').toArray()[0], documents.results[0].getGroup('docchapter.docs').getFirst()),
                     done();
                 });
             });
