@@ -643,7 +643,7 @@
         },
         /**
          * Gets the first GroupDoc, useful when group has the flag repeat=false
-         * */
+         */
         getFirst: function() {
             return this.value.length? this.value[0] : null;
         },
